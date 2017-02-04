@@ -3,6 +3,12 @@
   margin: .25rem;
 }
 
+.card.completed,
+.card.completed .card-footer {
+  background-color: #EEE;
+  color: #CCC;
+}
+
 .card,
 .card-footer {
   background-color: #FFFFA5;
