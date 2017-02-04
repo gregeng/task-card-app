@@ -31,3 +31,7 @@ i.fa-times {
 i.fa-check {
   color: #CCC;
 }
+
+i.fa-trash {
+  text-align: right;
+}

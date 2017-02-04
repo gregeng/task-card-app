@@ -18,4 +18,8 @@ export class CardComponent implements OnInit {
     this.task.completed = !this.task.completed;
   }
 
+  hideCard() {
+    this.task.hidden = !this.task.hidden;
+  }
+
 }
