@@ -25,5 +25,6 @@ export class AppComponent {
     const task = new Task(content, completed);
 
     this.tasks.push(task);
+    this.currentTask.content = null;
   }
 }
