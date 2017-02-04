@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Task } from './model/task ';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  task1: Task = {
+    content: "Buy some milk",
+    completed: false
+  }
 }
