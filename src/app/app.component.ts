@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Task } from './model/task';
+import {Component} from '@angular/core';
+import {Task} from './model/task';
 
 @Component({
   selector: 'app-root',
@@ -16,5 +16,14 @@ export class AppComponent {
       "Walk the turtle",
       false
     ),
-  ]
+  ];
+
+  private currentTask = new Task(null, false);
+
+  addTask() {
+    const { content, completed } = this.currentTask;
+    const task = new Task(content, completed);
+
+    this.tasks.push(task);
+  }
 }
